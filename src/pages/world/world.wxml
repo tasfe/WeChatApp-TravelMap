@@ -1,4 +1,3 @@
-<!--index.wxml-->
 <view class="container">
   <button type="default" size="{{defaultSize}}" bindtap="chinaMapOnClick"> 中国地图 </button>
 </view>

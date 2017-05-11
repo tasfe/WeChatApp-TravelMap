@@ -1,13 +1,13 @@
 {
-  "pages":[
+  "pages": [
     "pages/china/china",
     "pages/world/world"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "旅行地图册",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
@@ -20,6 +20,6 @@
         "text": "世界地图"
       }
     ],
-    "position":"top"
+    "position": "top"
   }
 }
