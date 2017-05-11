@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/china/china",
+    "pages/world/world"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/china/china",
+        "text": "中国地图"
+      },
+      {
+        "pagePath": "pages/world/world",
+        "text": "世界地图"
+      }
+    ],
+    "position":"top"
+  }
+}
