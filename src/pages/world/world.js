@@ -1,10 +1,4 @@
-//index.js
-var pageObject = {
-  data: {
-  },
-  chinaMapOnClick: function (event) {
-    console.log("123")
-  }
-}
+import { MapPage } from "../map/map_page"
 
-Page(pageObject)
+let mapPage = new MapPage("https://raw.githubusercontent.com/hcq0618/WeChatApp-TravelMap/master/world.jpg", "world");
+mapPage.show();

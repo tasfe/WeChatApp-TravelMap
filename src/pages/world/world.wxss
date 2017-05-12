@@ -1,1 +1,1 @@
-/**index.wxss**/
+@import "../map/map_template.wxss"

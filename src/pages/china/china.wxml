@@ -1,4 +1,1 @@
-<view class="map_container" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove">
-  <image class="map_image" src="{{mapUrl}}" style="width:{{ mapWidthPercent }}%; height:{{ mapHeightPercent }}%" bindload="onMapLoad">
-  </image>
-</view>
+<include src="../map/map_template.wxml" />
