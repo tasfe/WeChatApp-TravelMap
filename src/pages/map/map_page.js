@@ -31,6 +31,10 @@ export class MapPage {
   }
 
   show() {
+    wx.showLoading({
+      title: '加载中...',
+    });
+
     Page(this.pageObject);
   }
 
@@ -44,6 +48,11 @@ export class MapPage {
           page.setData({
             mapUrl: data
           });
+          
+          wx.hideLoading();
+        },
+        fail: function () {
+          wx.hideLoading();
         }
       });
     };
