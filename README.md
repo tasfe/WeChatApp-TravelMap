@@ -1,5 +1,6 @@
 # WeChatApp-TravelMap
-a wechat app named TravelMap
+微信小程序(旅行地图册)
+A wechat app named TravelMap
 
 ## License
 MIT License
