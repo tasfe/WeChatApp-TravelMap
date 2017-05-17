@@ -1,11 +1,11 @@
 import { MapTouchHandler } from "map_touch"
-import { MapManager } from "map_manager"
+import { FileDownloader } from "../../libs/filedownloader/file_downloader"
 
 export class MapPage {
 
-  constructor(url, fileCacheKey) {
+  constructor(url) {
     this.mapTouchHandler = new MapTouchHandler();
-    this.mapManager = new MapManager(url, fileCacheKey);
+    this.fileDownloader = new FileDownloader(url);
     this.page = null;
 
     this.pageObject = {
@@ -32,7 +32,7 @@ export class MapPage {
 
   show() {
     wx.showLoading({
-      title: '加载中...',
+      title: '加载中',
     });
 
     Page(this.pageObject);
@@ -43,7 +43,7 @@ export class MapPage {
     let mapPage = this;
     return function (options) {
       let page = this;
-      mapPage.mapManager.fetch({
+      mapPage.fileDownloader.fetch({
         success: function (data) {
           page.setData({
             mapUrl: data
