@@ -1,5 +1,7 @@
 
-import { MapPage } from "../map/map_page"
+import { Map } from "../common/map"
 
-let mapPage = new MapPage("https://wxapi.hotapp.cn/proxy/?appkey=hotapp11377340&url=http://map.ps123.net/china/UploadFile/201407/2014070323542296.jpg","china");
-mapPage.show();
+let map = new Map(
+  "https://wxapi.hotapp.cn/proxy/?appkey=hotapp11377340&url=http://map.ps123.net/china/UploadFile/201407/2014070323542296.jpg"
+  , "china");
+map.show();

@@ -1,0 +1,63 @@
+page {
+  height: 100%;
+}
+
+.map_container {
+  height: 100%;
+  width: 100%;
+}
+
+.tool_button {
+  height: 96rpx;
+  width: 96rpx;
+}
+
+.paint_cancel_botton {
+  position: fixed;
+  right: 20rpx;
+  bottom: 100rpx;
+}
+
+.paint_confirm_botton {
+  position: fixed;
+  right: 126rpx;
+  bottom: 100rpx;
+}
+
+.paint_erase_botton {
+  position: fixed;
+  right: 218rpx;
+  bottom: 100rpx;
+}
+
+.paint_stroke_botton {
+  position: fixed;
+  right: 310rpx;
+  bottom: 100rpx;
+}
+
+.paint_color_botton {
+  position: fixed;
+  right: 402rpx;
+  bottom: 100rpx;
+}
+
+.paint_map_canvas {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+}
+
+.zoom_in_button {
+  position: fixed;
+  left: 20rpx;
+  bottom: 100rpx;
+}
+
+.zoom_out_button {
+  position: fixed;
+  left: 20rpx;
+  bottom: 206rpx;
+}

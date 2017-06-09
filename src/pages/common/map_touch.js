@@ -1,8 +1,8 @@
 export class MapTouchHandler {
 
-  constructor() {
+  constructor(map) {
     this.oldDistance = 0;
-    this.oldScale = 1.0;
+    this.map = map;
   }
 
   //计算多指间距离
@@ -57,25 +57,9 @@ export class MapTouchHandler {
       // distanceDiff 为正数时，表示两指间距离在变大，图片需要被放大；反之，则代表两指间距缩小，图片需要被缩小。
 
       // 在实测中，使用 0.005 这个值可获得比较良好的缩放体验。
-      let newScale = mapTouchHandler.oldScale + 0.005 * distanceDiff;
-      if (newScale <= 1) {
-        //最小缩到100%
-        return;
-      }
+      let newScale = mapTouchHandler.map.currentScale + 0.005 * distanceDiff;
 
-      let scaleWidth = newScale * originalWidth;
-      let scaleHeight = newScale * originalHeight;
-      mapTouchHandler.oldScale = newScale;
-
-      let scaleWidthPercent = newScale * 100;
-      let scaleHeightPercent = newScale * 100;
-
-      console.log("scale width percent " + scaleWidthPercent + " height percent " + scaleHeightPercent);
-
-      this.setData({
-        mapHeightPercent: scaleHeightPercent,
-        mapWidthPercent: scaleWidthPercent
-      });
+      mapTouchHandler.map.scale(mapTouchHandler.map, this, newScale);
     };
   }
 }

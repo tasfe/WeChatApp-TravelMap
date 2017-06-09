@@ -1,1 +1,1 @@
-@import "../map/map_template.wxss"
+@import "../common/map_template.wxss"

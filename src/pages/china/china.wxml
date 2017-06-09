@@ -1,1 +1,1 @@
-<include src="../map/map_template.wxml" />
+<include src="../common/map_template.wxml" />
